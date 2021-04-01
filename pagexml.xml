@@ -1,0 +1,23 @@
+<basededonnees>
+	<listeFilm>
+		<FILM idFilm='FFG3' titre='Forrest Gump' description='...' realisateur='...' duree='...'>
+			<GENREREF id='GANIM'> </GENREREF>
+
+			<descriptionx date='19/03/2021'> 
+				retkdshfjfj
+			</descriptionx>
+		</FILM>
+
+		<FILM idFilm='FFRT' titre='FRT' description='...' realisateur='...' duree='...'>
+			<GENREREF id='Horreur'> </GENREREF>
+			<descriptionx auteur='gtesd'> 
+				<url>erjkfeks</url>
+				</descriptionx>	
+		</FILM>
+		
+		<FILM idFilm='FDSF' titre='DSF' description='...' realisateur='...' duree='...'>
+			<GENREREF id='Comédie'> </GENREREF>	
+		</FILM>
+
+	</listeFilm>
+</basededonnees>
