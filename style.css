@@ -157,3 +157,20 @@ input {
     background : #b6b6b670;
 }
 /* ==================== STYLE CSS DU FICHIER XML ==================== */
+
+basededonnees {
+	display: block;
+	margin: 5pt;
+	border: none;
+	
+	background-color: #33FF33;
+	color: #00428C;
+	
+	font-size: medium;	
+	font-family: verdana, trebuchet, "Helvetica narrow", arial, helvetica,
+		sans-serif;
+}
+
+FILM {
+    display: block;
+}
