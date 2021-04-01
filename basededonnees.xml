@@ -2,25 +2,56 @@
 <?xml-stylesheet href="style.css" type="text/css"?>
 <!DOCTYPE basededonnees SYSTEM "basededonnees.dtd">
 <basededonnees>
+    <nom>FILMS</nom>
 	<listeFilm>
 		<FILM idFilm="FFG3" titre="Forrest Gump" description="..." realisateur="..." duree="...">
 			<GENREREF id="GANIM"> </GENREREF>
-
-			<descriptionx date="19/03/2021"> 
-				DESCRIPTION
-			</descriptionx>
+			<infoFilm>
+				<nom>Aquaman</nom>
+			    <nom>Realisateur: James Wan</nom>
+				<nom>Date de sortie: 2018-12-19</nom>
+			    <descriptionx date="19/03/2021"> 
+			        <item>DESCRIPTION</item>
+				    <item>Les origines d’un héros malgré lui, dont le destin est d’unir deux mondes opposés, la terre et la mer.
+				    Cette histoire épique est celle d’un homme ordinaire destiné à devenir le roi des Mers.
+                    </item>
+			    </descriptionx>
+			</infoFilm>
 		</FILM>
 
 		<FILM idFilm="FFRT" titre="FRT" description="..." realisateur="..." duree="...">
 			<GENREREF id="Horreur"> </GENREREF>
-			<descriptionx auteur="gtesd"> 
-				<url>Lien</url>
-				</descriptionx>	
+			<infoFilm>
+				<nom>Mission Impossible</nom>
+			    <nom>Réalisateur:Christopher McQuarrie</nom>
+				<nom>Date de sortie:2018-08-01</nom>
+			    <descriptionx auteur="Luc"> 
+			        <item>DESCRIPTION</item>
+				    <item>Les meilleures intentions finissent souvent par se retourner contre vous… Dans MISSION : IMPOSSIBLE – FALLOUT, Ethan Hunt accompagné de son équipe de l’IMF – Impossible Mission Force
+					et de quelques fidèles alliées sont lancés dans une course contre la montre, suite au terrible échec d’une mission.
+					</item>
+			    </descriptionx>
+			</infoFilm>
 		</FILM>
 		
 		<FILM idFilm="FDSF" titre="DSF" description="..." realisateur="..." duree="...">
-			<GENREREF id="Comédie"> </GENREREF>	
-		</FILM>
+			<GENREREF id="Comédie"> </GENREREF>
+			<infoFilm>
+				<nom>X-men</nom>
+			    <nom>Realisateur: Bryan Singer</nom>
+				<nom>Date de sortie:2016-05-18</nom>
+			    <descriptionx date="19/03/2021"> 
+			        <item>DESCRIPTION</item>
+				    <item>
+						Depuis les origines de la civilisation, Apocalypse, le tout premier mutant, a absorbé de nombreux pouvoirs, 
+						devenant à la fois immortel et invincible, adoré comme un dieu. Se réveillant après un sommeil de plusieurs 
+						milliers d'années et désillusionné par le monde qu'il découvre, il réunit de puissants mutants dont Magneto
+						pour nettoyer l'humanité et régner sur un nouvel ordre. Raven et Professeur X vont joindre leurs forces pour
+						affronter leur plus dangereux ennemi et sauver l'humanité d'une destruction totale.
+                    </item>
+			    </descriptionx>
+			</infoFilm>	
+        </FILM>
 
 	</listeFilm>
 </basededonnees>
