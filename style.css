@@ -8,26 +8,23 @@ body{
     padding:20px;
     font-family : "Sriracha";
 }
-section {
+#section {
     box-shadow: 1px 1px 316px 22px rgba(0,0,0,0.49);
-    -webkit-box-shadow: 1px 1px 316px 22px rgba(0,0,0,0.49);
-    -moz-box-shadow: 1px 1px 316px 22px rgba(0,0,0,0.49);
     margin-top: .5rem;
     padding: 1rem;
 
 }
 
-section header {
+#section #header {
     padding: 1rem 1rem 0 1rem;
 }
 
-section header img {
+#section #header img {
     height:70vh;
     width:100%;
-    position:center;
 }
 
-section #lien { 
+#section #lien { 
     text-align: center;
     border-bottom:1px solid #ccc;
     border-left:1px solid #ccc;
@@ -37,7 +34,7 @@ section #lien {
     margin-top: -9px;
 }
 
-section #lien a{
+#section #lien a{
     display:inline-block;
     outline: none;
     text-decoration: none;
@@ -49,7 +46,7 @@ section #lien a{
 
 }
 
-section #lien a:hover{
+#section #lien a:hover{
     box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
 	background-color:#f9f9f9;
@@ -61,14 +58,18 @@ section #lien a:hover{
 	text-shadow:0px 0px 0px #ffffff;
 }
 
-h1 {
+h1, h2{
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align:center;
 }
 
+h3 {
+    text-align:center;
+}
+
 .container {
-    width:97%;
+    width:100%;
     height: auto;
     background-color: #b6b6b625;
     display: flex;
@@ -77,6 +78,14 @@ h1 {
 }
 
 .container_mcd {
+    width:97%;
+    height: auto;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.container_images {
     width:97%;
     height: auto;
     display: flex;
@@ -156,6 +165,26 @@ input {
 .btn:hover {
     background : #b6b6b670;
 }
+
+.images h4{
+    margin: 2rem 1.5rem 0 1rem;
+    padding-left: 1.5rem;
+    color : #551A8B;
+    font-size: larger;
+    border: 1px solid black;
+}
+
+p {
+    margin : 2rem 2rem;
+    text-align : justify;
+}
+
+span {
+	color:#053667;
+    font-size: 50px;
+    margin-bottom: 0;
+    line-height : 1rem;
+}
 /* ==================== STYLE CSS DU FICHIER XML ==================== */
 
 basededonnees {
@@ -166,31 +195,30 @@ basededonnees {
     padding-left: 4%;
 	border: none;
 	background-color: rgb(236, 215, 188);
-	color: #00428C;
-	font-size: medium;	
+	color: #00428C;	
 	font-family: verdana, trebuchet, "Helvetica narrow", arial, helvetica,
 		sans-serif;
+    font-size: larger;
 }
 
-item {
+item, info, titre {
     display: block;
 }
 
-basededonnees nom{
+basededonnees info, titre{
     display: block;
 	margin-top: 1em;
 	margin-right: 5%;
-	border: solid thin green;
 	background-color: white;
 	font-variant: small-caps;
-	font-size: 150%;
+	font-size: 200%;
 	font-weight: normal;
 	text-align: center;
 }
 
-FILM nom{
+FILM info{
 	background-color: #E4E5E7;	
-	font-size: medium;
+	font-size:large;
 	text-align:center;
 }
 
@@ -210,16 +238,14 @@ infoFilm{
 	padding-bottom: 0.2em;
 	padding-left: 1em;
 	padding-right: 1em;
-	
 	background-color: #E4E5E7;	
-	
 	font-size: smaller;
 	line-height: 120%;
 	
 	text-align:center;
 }
 
-descriptionx item{
+description{
     display: block;
 	margin-top: 0.5em;
 	margin-right: 5%;
@@ -240,9 +266,23 @@ descriptionx item{
 	text-align: justify;
 }
 
-infoFilm nom, descriptionx item {
+infoFilm description {
     border:none;
-}
-infoFilm descriptionx item {
+    margin-top: 10px;
     text-align: center;
 }
+
+infoFilm item {
+    margin-top: 20px;
+}
+
+infoFilm description url{
+    color : blue;
+    text-decoration: underline;
+}
+
+url:hover {
+    cursor: pointer;
+    color: rgb(26, 26, 131);
+}
+

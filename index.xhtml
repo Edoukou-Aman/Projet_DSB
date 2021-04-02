@@ -6,16 +6,20 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <section>
-        <header>
+    <div id="section">
+        <div id="header">
             <img src="salle.jpg" alt="Salle de Cinéma"/>
-        </header>
+        </div>
         <div id="lien">
             <a href="#">ACCUEIL</a>
             <a href="basededonnees.xml">XML</a>
             <a href="basededonnees.dtd">DTD</a>
+            <a href="imagexpath.xhtml">XPATH ET VALIDATION</a>
             <a href="#contact">CONTACT</a>
         </div>
+    
+        <p> <span>É</span>tant intéressés par le cinéma, notre projet consiste à mettre en place une plateforme qui permettra à un utilisateur de voir les différents films qui sont programmés dans une salle de cinéma et d’avoir la possibilité d’acheter un ticket. Pour cela nous avons implémenté une base de données pour stocker les différentes informations sur les films, les salles de cinéma, les utilisateurs de la plateforme etc. Ce site est un exemple de comment l'Istic pourrait utiliser une telle plateforme.</p>
+
         <div id="tableau">
             <h1 class="col">PROGRAMMATION DES SÉANCES</h1>
             <div class="container">
@@ -78,14 +82,12 @@
                 </div>
             </div>
         </div>
-
         <div class="img_mcd">
             <h1 class="col">PRÉSENTATION DU MCD</h1>
             <center>
                 <img src="cmd.png" alt="mcd" height="500"/>
             </center>
         </div>
-
         <div class="liste">
             <h1 class="col">PROGRAMMATION DES SÉANCES</h1>
             <div class="container_mcd">
@@ -117,30 +119,27 @@
                         <li>Don Hall</li>
                         <li>John Span</li>
                         <li>Roseanne Liang</li> 
-
                     </ol>
                 </div>
             </div>
         </div>
-
         <div id="contact">
             <div class="container_contact">
                 <div class="box">
-                    <img src="logoisticfr.png" alt="image istic" height="100"  srcset="" />
+                    <img src="logoisticfr.png" alt="image istic" height="100"/>
                 </div>
                 <div class="box">
                     <h3>Contacts</h3>
                     <form action="">
-                        <label for="">Email : </label>
+                        <label>Email : </label>
                         <input type="text" />
-                        <label for="">Message : </label>
+                        <label>Message : </label>
                         <input type="text" />
                         <button class="btn">Envoyer</button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </div>
 </body>
 </html>

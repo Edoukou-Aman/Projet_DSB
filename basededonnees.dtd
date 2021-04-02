@@ -1,19 +1,19 @@
-<!ELEMENT basededonnees (listeFilm,listeGenre)>
-<!ELEMENT nom(#PCDATA)>
-<!ELEMENT listeFilm(FILM)*>
-<!ELEMENT FILM (GENREREF+, descriptionx?)>
-<!ATTLIST FILM idFilm ID #REQUIRED titre CDATA #REQUIRED description CDATA #IMPLIED realisateur CDATA #IMPLIED duree CDATA #required restriction #IMPLIED >
+<!ELEMENT basededonnees (titre, listeFilm,listeGenre?)>
 
+<!ELEMENT titre(#PCDATA)>
+<!ELEMENT listeFilm(FILM)*>
+
+<!ELEMENT FILM (GENREREF+, infoFilm)>
 <!ELEMENT GENREREF>
 <!ATTLIST idGenre IDREF #REQUIRED>
 
-<!ELEMENT infoFilm>
+<!ELEMENT infoFilm (info+, item+, description?)>
+<!ELEMENT info(#PCDATA)>
+<!ELEMENT item ANY>
+<!ELEMENT description (#PCDATA|url)*>
+<!ATTLIST description date #IMPLIED auteur #IMPLIED>
+<!ELEMENT url (#PCDATA)>
 
-<!ELEMENT listeGenre (GENRE)*
+<!ELEMENT listeGenre (GENRE)*>
 <!ELEMENT GENRE>
 <!ATTLIST GENRE idGenre ID #REQUIRED nom CDATA #REQUIRED>
-
-<!ELEMENT descriptionx (#PCDATA|url)*>
-<!ELEMENT url (#PCDATA)>
-<!ATTLIST descriptionx date #IMPLIED auteur #IMPLIED>
-<!ELEMENT item ANY>
